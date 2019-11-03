@@ -1,35 +1,32 @@
 package leetcode.recursion1;
 
+import leetcode.ListNode;
+
 public class SwappingNodesInPairs {
 
     public static void main(String[] args) {
-        ListNode No = new ListNode(5);
-        No.next = new ListNode(1);
-        No.next.next = new ListNode(3);
-        No.next.next.next = new ListNode(10);
+        ListNode no1 = new ListNode(5);
+        no1.setNext(new ListNode(1));
+        no1.getNext().setNext(new ListNode(3));
+        no1.getNext().getNext().setNext(new ListNode(10));
 
-        System.out.println("[" + No.val + ", " + No.next.val + ", " + No.next.next.val + ", " + No.next.next.next.val + "]");
+        System.out.println("[" + no1.getVal() + ", " + no1.getNext().getVal() + ", " + no1.getNext().getNext().getVal()
+                + ", " + no1.getNext().getNext().getNext().getVal() + "]");
 
-        No = swapPairs(No);
+        no1 = swapPairs(no1);
 
-        System.out.println("[" + No.val + ", " + No.next.val + ", " + No.next.next.val + ", " + No.next.next.next.val + "]");
-    }
-
-//    Definition for singly-linked list.
-    public static class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) { val = x; }
+        System.out.println("[" + no1.getVal() + ", " + no1.getNext().getVal() + ", " + no1.getNext().getNext().getVal()
+                + ", " + no1.getNext().getNext().getNext().getVal() + "]");
     }
 
     public static ListNode swapPairs(ListNode head) {
-        if (null == head || head.next == null) {
+        if (null == head || head.getNext() == null) {
             return head;
         }
         else {
-            ListNode temp = head.next;
-            head.next = swapPairs(temp.next);
-            temp.next = head;
+            ListNode temp = head.getNext();
+            head.setNext(swapPairs(temp.getNext()));
+            temp.setNext(head);;
             return temp;
         }
     }
