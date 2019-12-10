@@ -1,4 +1,4 @@
-package leetcode.memoization;
+package leetcode.recursion1.memoization;
 import java.util.HashMap;
 import java.util.Scanner;
 

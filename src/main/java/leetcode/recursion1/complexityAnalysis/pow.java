@@ -1,4 +1,4 @@
-package leetcode.complexityAnalysis;
+package leetcode.recursion1.complexityAnalysis;
 
 import java.util.Scanner;
 

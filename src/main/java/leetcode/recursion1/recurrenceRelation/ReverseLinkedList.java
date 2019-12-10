@@ -1,4 +1,4 @@
-package leetcode.recurrenceRelation;
+package leetcode.recursion1.recurrenceRelation;
 
 import leetcode.ListNode;
 

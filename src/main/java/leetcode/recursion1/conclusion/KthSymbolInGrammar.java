@@ -1,4 +1,4 @@
-package leetcode.conclusion;
+package leetcode.recursion1.conclusion;
 
 import java.util.ArrayList;
 import java.util.List;

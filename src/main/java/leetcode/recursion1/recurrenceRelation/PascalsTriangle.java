@@ -1,4 +1,4 @@
-package leetcode.recurrenceRelation;
+package leetcode.recursion1.recurrenceRelation;
 
 import java.util.ArrayList;
 import java.util.List;

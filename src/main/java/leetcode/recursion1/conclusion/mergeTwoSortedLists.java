@@ -1,8 +1,6 @@
-package leetcode.conclusion;
+package leetcode.recursion1.conclusion;
 
 import leetcode.ListNode;
-
-import java.util.List;
 
 public class mergeTwoSortedLists {
 
